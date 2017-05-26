@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Food</title>
+    <link rel='stylesheet' type='text/css' href='css/main.css'> 
+
+<style>
+
+    form{
+        margin:50px;
+    }
+    fieldset{
+        padding: 10px;
+        margin:10px;
+        width:40%;
+    }
+    input{
+        padding:5px;
+        margin:5px;
+          }
+    label{
+        vertical-align: top;   
+    }
+ .choicebox{
+ border: 1px solid grey;   
+ width: 20%;
+ height: 120px;
+ margin: 5%;
+ padding: 5px;
+ text-align: center;
+}
+.choicebox:hover{
+    background-color:lightgrey;
+    font-size:1.1em;
+
+}
+
+p{
+    margin:0px;
+    padding:0px;
+
+}
+</style>
+
+
+</head>
+<body>
+ <div class='sign-in'>
+        <div class='arf'><a href="index.html"><img src='images/logo.png' alt="logo"></a></div>
+        <div class='arf'><a href='signin.html'>Sign-in</a>/<a href='register.html'>Register</a></div>
+    </div>
+   
+</div>
+    <h1>Submit Request </h1>
+    <p> Please fill out the form below.</p>
+<form id="orderForm">
+
+    <p> E-mail Address: <input type='text' placeholder="username@example.com" required name='email'></p>
+    
+    <div class='flex-container'>
+        <div class='choicebox'>
+            <p>Classic<br>This is a classic treatment.</p><input type='radio' name='choice' value='classic' id='classic'>
+        </div>
+        <div class='choicebox'>
+            <p>Premium<br>Pinky's up.</p><input type='radio' name='choice' value='premium' id='premium'>
+        </div>
+        <div class='choicebox'>
+            <p>Royal<br>Your food is served on a silver platter. Literally.</p><input type='radio' name='choice' value='royal' id='royal'>
+        </div>
+    </div>
+    
+    <p> Restaurant:</p> <input type='text' name='restName' required>
+
+     <div class='flex-container'>
+        <div class='choicebox'>
+            <p>10%<br>They did their job.</p><input type='radio' name='tip' id='tip10'>
+        </div>
+        <div class='choicebox'>
+            <p>15%<br>They made you feel special.</p><input type='radio' name='tip' id='tip15'>
+        </div>
+        <div class='choicebox'>
+            <p>20%<br>I wanna give them more, but this is all I have!</p><input type='radio' name='tip' id='tip20'>
+        </div>
+        </div>
+    </div>
+    <input type='button' value='Request' name='requestSubmit' id='clickSubmit'>
+
+    
+
+</form>
+
+    <h2 id='total'> Total: $0.00 </h2>
+   
+    <footer >
+
+<div>    
+
+Site Map<br>
+
+    <a href="index.html"> Home </a><br>
+    <a href="register.html">Register</a><br>
+    <a href="request.html">Request</a><br>
+    <a href="about.html">About</a><br><br>
+ <p class="copyright">&copy Andrew J. Galle </p>
+</div> 
+
+<div>
+    <a href="#">Privacy Policy </a><br>
+    <a href="#">Terms & Conditions</a>
+</div> 
+
+<div>
+    <a href="#"> Lucky you :-D </a>
+</div>    
+
+</footer>
+
+<script src="js/requestScript.js"></script>
+</body>
+</html>

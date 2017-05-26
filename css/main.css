@@ -1,0 +1,211 @@
+﻿
+  a{
+            text-decoration: none
+  }
+  a:hover{
+      text-shadow: 0px 0px 20px blue;
+      color:red;
+
+  } 
+  body,html{
+      height: 100%;
+  }
+
+  
+    h1, h2, h3{
+        color:red;
+ 
+    }
+
+    
+    
+    .sign-in{
+        border-bottom: solid 1px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+        justify-content: center;
+        padding: 25px;
+       
+
+    }
+
+    .arf{
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+	.flex-container{
+        display: flex;
+        flex-direction: row;     
+        margin: auto;
+		width:100%;
+    }
+    .food{
+        display:flex;
+        width:100%;
+        height:200px;
+        border: 20px solid darkred;
+        margin: auto;
+        display-size:cover;
+        margin-top: 80px;
+		margin-bottom:100px;
+
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        flex-direction: row;     
+        margin-top:40px;
+        justify-content: center;
+        align-content: center;
+        background-color: lightgray;
+
+    }
+    footer > *{
+        margin-right: auto;
+        margin-left:auto;
+    }
+    .findDriver{
+        display: flex;
+        flex-direction: column;     
+        margin: auto;
+        width: 50%;
+    }
+
+
+    /* This next  is for the pop-up advert */
+  
+     .modal{
+        display:none; /* hidden to start*/
+        position:fixed; /* doesn't move */
+		z-index:1;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+       /* background-color:rgba(0,0,0,.4);*/
+	
+	} 
+   
+
+    .modal-content{
+        background-image: url(../images/weatherCake.png);
+        background-size: cover;
+		background-repeat:no-repeat;
+	
+		margin: 5%;
+        padding:20px;
+        height:275px;
+        width:400px;
+		border:15px solid indigo;
+		border-radius:10px;
+    }
+	.modal-content > * {
+		color:black;
+		background:white;
+		text-shadow:none;
+		opacity:0.8;
+		text-align:right;
+		display:inline;
+	
+	}
+
+    .feat{
+        position:relative;
+        display:inline-block;
+    }
+    
+	.feature-food{
+		border-radius:30%;
+		height:150px;
+		width:200px;
+		border:2px solid darkred;
+		margin:15px auto auto 15px;
+		position:relative;
+        top:0;
+        left:0;
+	}
+    .foods{
+        height:350px;
+        width:100%;
+        background-repeat: no-repeat;
+        background-image:url('../images/trucks.jpg');
+        background-size:cover;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+       
+
+    }
+
+    .foodword{
+        font-size:5em;
+        color: darkred;
+        background: white;
+        opacity:0.6;
+     }
+    .business1{
+    font-family: 'Lobster', cursive;
+    position:absolute;
+        left:50px;
+        top:50px;
+        background: white;
+        opacity: 0.6;
+
+}
+
+
+.business2{
+
+font-family: 'Barrio', cursive;
+position:absolute;
+        left:50px;
+        top:50px;
+        background: white;
+        opacity: 0.6;
+
+}
+.business3{
+font-family: 'Montserrat Subrayada', sans-serif;
+position:absolute;
+        left:50px;
+        top:50px;
+         background: white;
+        opacity: 0.6;
+
+}
+
+    .feat{
+        margin: auto;
+        
+    }
+    
+	/* A slightly different modal for the coupon on hover */
+	.couponModal-content{
+		background-color:white;
+		margin:15% auto;
+		padding: 20px;
+		border: 10px dashed black;
+		height:150px;
+		width:150px;
+	}
+    #close{
+        color:black;
+        font-size:20px;
+        
+        float: right;
+    }
+    
+    #close:hover,#close:focus{
+        color:darkred;
+        text-decoration: none;
+        cursor:pointer;
+    }
+
+	#driverResultTarget{
+		color:red;
+	}

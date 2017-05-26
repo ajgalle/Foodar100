@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+<link rel='stylesheet' type='text/css' href='css/main.css'> 
+<link href="https://fonts.googleapis.com/css?family=Barrio|Lobster|Montserrat+Subrayada" rel="stylesheet"><style>
+
+</style>
+
+</head>
+
+<body>
+<!-- This will be the popup advertisement... it is always here but is invisible until the scroll happens in javasript.-->
+    <div class='modal' id='myModal'>
+        <div class='modal-content'>
+            <span id='close'>x</span>
+            <p> Now a word from our advertisers...</p><br><br><br>
+			<h2> Is Your Cake in the Rain?</h2>  <h3><a href='https://codepen.io/ajgalle/pen/wdmmMe'>Find out now </a> with a new CodePen project from <a href="https://ajgalle.github.io/">Andrew J. Galle</a> that uses your browsers location and jQuery to access an external weather service API. </p>
+        </div>
+    </div>
+<!-- This will be for the modal that appears to show a coupon -->
+    <div class='modal' id='bigCoupon'>
+        <div class='couponModal-content'>
+            <span id='closeCoupon'>x</span>
+            <p> A coupon just for you! <br> Order from one of our feature partners, and we'll double your order for free! Automatically applied at checkout. <a href='request.html'> Click to order! </a></p>
+        </div>
+    </div>
+
+
+
+    
+</div>
+    <div class='sign-in'>
+        <div class='arf'><a href="index.html"><img src='images/logo.png' alt="logo"></a></div>
+        <div class='arf'><a href='signin.html'>Sign-in</a>/<a href='register.html'>Register</a></div>
+    </div>
+
+<div class='foods'><h1 class='foodword' >Food to your doorstep.</h1></div>
+<!-- The next section is to show a coupon on mouseover of afeatured resteraunt user story. -->
+<h2 style='text-align:center'>Why not try a featured resaurant?</h2>
+
+<div class='flex-container'>
+	<div class='feat'><img class='feature-food' src='images/business1.jpg' alt='featured business'><h2 class='business1'> Unicorn Diner </h2></div>
+	<div class='feat'><img class='feature-food' src='images/business2.jpg' alt='featured business'><h2 class='business2'> Everything's Eggs! </h2></div>
+	<div class='feat'><img class='feature-food' src='images/business3.jpg' alt='featured business'><h2 class='business3'> Fish Fantastic </h2></div>
+</div>
+
+<div class='findDriver'>
+<h2> Find a driver near you! </h2>
+<p> Type in your zipcode below and click Go! to find a driver near you. </p>
+<form>
+    <input type='text' maxlength='5' size='5' name="zip" id='zipField'>
+    <input type="button" name='submitZip' value='Go!' id="zipSubmitButton">
+</form>
+<div id='driverResultTarget'></div>
+</div>
+
+    <footer >
+
+<div>    
+
+Site Map<br>
+
+    <a href="index.html"> Home </a><br>
+    <a href="register.html">Register</a><br>
+    <a href="request.html">Request</a><br>
+    <a href="about.html">About</a><br><br>
+
+ <p class="copyright"> © Andrew J. Galle </p>
+</div> 
+
+<div>
+    <a href="#">Privacy Policy </a><br>
+    <a href="#">Terms & Conditions</a>
+</div> 
+
+<div>
+    <a href="#"> Lucky you :-D </a>
+</div>    
+
+</footer>
+<script src='js/advert.js'></script>
+<script src='js/function.js'></script>
+
+</body>
+</html>
