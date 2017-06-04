@@ -3,7 +3,7 @@
 
 
 var submitZip=document.getElementById('zipSubmitButton');
-submitZip.addEventListener('click', checkZip)
+submitZip.addEventListener('click', checkZip);
 
 
 function checkZip(){

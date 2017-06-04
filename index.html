@@ -15,7 +15,7 @@
         <div class='modal-content'>
             <span id='close'>x</span>
             <p> Now a word from our advertisers...</p><br><br><br>
-			<h2> Is Your Cake in the Rain?</h2>  <h3><a href='https://codepen.io/ajgalle/pen/wdmmMe'>Find out now </a> with a new CodePen project from <a href="https://ajgalle.github.io/">Andrew J. Galle</a> that uses your browsers location and jQuery to access an external weather service API. </p>
+			<h2> Is Your Cake in the Rain?</h2>  <h3><a href='https://codepen.io/ajgalle/pen/wdmmMe'>Find out now </a> with a new CodePen project from <a href="https://ajgalle.github.io/">Andrew J. Galle</a> that uses your browsers location and jQuery to access an external weather service API. </h3>
         </div>
     </div>
 <!-- This will be for the modal that appears to show a coupon -->
@@ -27,9 +27,15 @@
     </div>
 
 
+    <div class="signin_banner">
+        <form>
+            Username <input type="text" id="signinName" /> 
+            Password <input type="password" id="signinPass" /> 
+            <input type="button" value="login" id="signinSubmit"/>
 
+        </form> 
+    </div>
     
-</div>
     <div class='sign-in'>
         <div class='arf'><a href="index.html"><img src='images/logo.png' alt="logo"></a></div>
         <div class='arf'><a href='signin.html'>Sign-in</a>/<a href='register.html'>Register</a></div>
@@ -40,47 +46,57 @@
 <h2 style='text-align:center'>Why not try a featured resaurant?</h2>
 
 <div class='flex-container'>
-	<div class='feat'><img class='feature-food' src='images/business1.jpg' alt='featured business'><h2 class='business1'> Unicorn Diner </h2></div>
-	<div class='feat'><img class='feature-food' src='images/business2.jpg' alt='featured business'><h2 class='business2'> Everything's Eggs! </h2></div>
-	<div class='feat'><img class='feature-food' src='images/business3.jpg' alt='featured business'><h2 class='business3'> Fish Fantastic </h2></div>
+    <div class="featureBox">
+        <div class='feat'><img class='feature-food' src='images/business1.jpg' alt='featured business'><h2 class='business1'> Unicorn Diner </h2></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices massa at magna auctor pellentesque. Curabitur quis est ut risus blandit feugiat sit amet maximus eros. Maecenas vitae egestas felis, quis porta enim.  </p>
+     </div>  
+          
+    <div class="featureBox"> 
+        <div class='feat'><img class='feature-food' src='images/business2.jpg' alt='featured business'><h2 class='business2'> Everything's Eggs! </h2></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices massa at magna auctor pellentesque. Curabitur quis est ut risus blandit feugiat sit amet maximus eros. Maecenas vitae egestas felis, quis porta enim.  </p>
+    </div>
+    <div class="featureBox">
+        <div class='feat'><img class='feature-food' src='images/business3.jpg' alt='featured business'><h2 class='business3'> Fish Fantastic </h2></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices massa at magna auctor pellentesque. Curabitur quis est ut risus blandit feugiat sit amet maximus eros. Maecenas vitae egestas felis, quis porta enim.  </p>
+    </div>
 </div>
+        <div class='findDriver'>
+            <h2> Find a driver near you! </h2>
+            <p> Type in your zipcode below and click Go! to find a driver near you. </p>
+            <form>
+                <input type='text' maxlength='5' size='5' name="zip" id='zipField'>
+                <input type="button" name='submitZip' value='Go!' id="zipSubmitButton">
+            </form>
+            <div id='driverResultTarget'></div>
+        </div>
 
-<div class='findDriver'>
-<h2> Find a driver near you! </h2>
-<p> Type in your zipcode below and click Go! to find a driver near you. </p>
-<form>
-    <input type='text' maxlength='5' size='5' name="zip" id='zipField'>
-    <input type="button" name='submitZip' value='Go!' id="zipSubmitButton">
-</form>
-<div id='driverResultTarget'></div>
-</div>
+        <footer>
 
-    <footer >
+            <div>
 
-<div>    
+                Site Map<br>
 
-Site Map<br>
+                <a href="index.html"> Home </a><br>
+                <a href="register.html">Register</a><br>
+                <a href="request.html">Request</a><br>
+                <a href="about.html">About</a><br><br>
 
-    <a href="index.html"> Home </a><br>
-    <a href="register.html">Register</a><br>
-    <a href="request.html">Request</a><br>
-    <a href="about.html">About</a><br><br>
+                <p class="copyright"> © Andrew J. Galle </p>
+            </div>
 
- <p class="copyright"> © Andrew J. Galle </p>
-</div> 
+            <div>
+                <a href="#">Privacy Policy </a><br>
+                <a href="#">Terms & Conditions</a>
+            </div>
 
-<div>
-    <a href="#">Privacy Policy </a><br>
-    <a href="#">Terms & Conditions</a>
-</div> 
+            <div>
+                <a href="#"> Lucky you :-D </a>
+            </div>
 
-<div>
-    <a href="#"> Lucky you :-D </a>
-</div>    
-
-</footer>
-<script src='js/advert.js'></script>
-<script src='js/function.js'></script>
+        </footer>
+        <script src='js/advert.js'></script>
+    <script src='js/function.js'></script>
+    <script src='js/password.js'></script>
 
 </body>
 </html>

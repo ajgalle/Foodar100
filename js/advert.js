@@ -2,27 +2,32 @@
 var justDoItOnce = 0;
 var close=document.getElementById('close'); 
 var modal=document.getElementById('myModal');
-
 var closeCoupon=document.getElementById('closeCoupon');
-var modalCoupon=document.getElementById('bigCoupon');
-
+var modalCoupon = document.getElementById('bigCoupon');
+var feats = document.getElementsByClassName('feat');
 /* This deals with showing and closing the mouse over coupon*/
-function coupon(){
-        modalCoupon.style.display='block';
-        closeCoupon.onclick=function(){
-            modalCoupon.style.display='none';
-        }
+function coupon() {
+    modalCoupon.style.display = 'block';
+}
+
+closeCoupon.addEventListener('click',function(){
+            modalCoupon.style.display = 'none';
+});
+    
 		feats[0].addEventListener('mouseout', function(){
 			modalCoupon.style.display='none';
 		});
-	feats[1].addEventListener('mouseout', function(){
+
+
+       feats[1].addEventListener('mouseout', function () {
 			modalCoupon.style.display='none';
 		});
+
 	feats[2].addEventListener('mouseleave', function(){
 			modalCoupon.style.display='none'; 
 		});
 	
-}
+
     
 function advert(){
 setTimeout(function(){
@@ -30,12 +35,12 @@ setTimeout(function(){
     if (justDoItOnce===0){
         justDoItOnce++; 
 		
-        modal.style.display='block';
-        close.onclick=function(){
-            modal.style.display='none';
-        }
+        modal.style.display = 'block';
+        close.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
         
-    };
+    }
 
 },5000); //ends the setTimeout after 5 secs  
 }

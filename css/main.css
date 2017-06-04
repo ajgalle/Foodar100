@@ -1,9 +1,13 @@
 ﻿
-  a{
+.signin_banner{
+    background:lightgrey;
+    
+}  
+a{
             text-decoration: none
   }
   a:hover{
-      text-shadow: 0px 0px 20px blue;
+      text-shadow: 0 0 20px blue;
       color:red;
 
   } 
@@ -43,17 +47,16 @@
         margin: auto;
 		width:100%;
     }
-    .food{
-        display:flex;
-        width:100%;
-        height:200px;
-        border: 20px solid darkred;
-        margin: auto;
-        display-size:cover;
-        margin-top: 80px;
-		margin-bottom:100px;
-
-    }
+.food {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border: 20px solid darkred;
+    margin: auto;
+    /*display-size:cover;*/
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
     footer{
         display: flex;
         width: 100%;
@@ -102,6 +105,9 @@
         width:400px;
 		border:15px solid indigo;
 		border-radius:10px;
+    }
+    .featureBox{
+        padding: 5%;
     }
 	.modal-content > * {
 		color:black;
