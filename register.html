@@ -3,6 +3,7 @@
 <head>
     <title>Register</title>
 <link rel='stylesheet' type='text/css' href='css/main.css'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
@@ -25,10 +26,20 @@
 </style>
 
 </head>
+
 <body>
-     <div class='sign-in'>
+
+    <div class="signin_banner">
+        <form>
+            Username <input type="text" id="signinName" />
+            Password <input type="password" id="signinPass" />
+            <input type="button" value="login" id="signinSubmit" />
+
+        </form>
+    </div>
+    <div class='sign-in'>
         <div class='arf'><a href="index.html"><img src='images/logo.png' alt="logo"></a></div>
-        <div class='arf'><a href='signin.html'>Sign-in</a>/<a href='register.html'>Register</a></div>
+        <div class='arf'><a href='#' id="signinLink">Sign-in</a>/<a id="registerField" href='register.html'>Register</a></div>
     </div>
    
 
@@ -78,5 +89,8 @@ Site Map<br>
 </div>    
 
 </footer>
+    <script src="js/jQuery-3.2.1.min.js"></script>
+    <script src='js/password.js'></script>
+    <script src='js/utility.js'></script>
 </body>
 </html>

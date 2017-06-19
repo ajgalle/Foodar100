@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome</title>
+
+<title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel='stylesheet' type='text/css' href='css/main.css'> 
-<link href="https://fonts.googleapis.com/css?family=Barrio|Lobster|Montserrat+Subrayada" rel="stylesheet"><style>
+<link href="https://fonts.googleapis.com/css?family=Barrio|Lobster|Montserrat+Subrayada" rel="stylesheet">
 
 </style>
 
@@ -38,16 +41,16 @@
     
     <div class='sign-in'>
         <div class='arf'><a href="index.html"><img src='images/logo.png' alt="logo"></a></div>
-        <div class='arf'><a href='signin.html'>Sign-in</a>/<a href='register.html'>Register</a></div>
+        <div class='arf'><a href='#' id="signinLink">Sign-in</a>/<a id="registerField" href='register.html'>Register</a></div>
     </div>
 
 <div class='foods'><h1 class='foodword' >Food to your doorstep.</h1></div>
-<!-- The next section is to show a coupon on mouseover of afeatured resteraunt user story. -->
-<h2 style='text-align:center'>Why not try a featured resaurant?</h2>
+<!-- The next section is to show a coupon on mouseover of a featured resteraunt user story. -->
+<h2 style='text-align:center'>Why not try a featured restaurant?</h2>
 
 <div class='flex-container'>
     <div class="featureBox">
-        <div class='feat'><img class='feature-food' src='images/business1.jpg' alt='featured business'><h2 class='business1'> Unicorn Diner </h2></div>
+        <div class='feat'><img class='feature-food' src='images/business1.jpg' alt='featured business'><h2 class='business1'> Extreme Unicorn Diner </h2></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices massa at magna auctor pellentesque. Curabitur quis est ut risus blandit feugiat sit amet maximus eros. Maecenas vitae egestas felis, quis porta enim.  </p>
      </div>  
           
@@ -94,9 +97,11 @@
             </div>
 
         </footer>
-        <script src='js/advert.js'></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src='js/advert.js'></script>
     <script src='js/function.js'></script>
     <script src='js/password.js'></script>
+    <script src='js/utility.js'></script>
 
 </body>
 </html>

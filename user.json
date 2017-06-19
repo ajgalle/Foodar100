@@ -1,0 +1,12 @@
+{
+"myUserName": {
+      "id": 1,
+      "firstName": "Andrew",
+      "lastName": "Galle",
+      "email": "email@example.com",
+      "phoneNumber": "(555) 999-0000",
+      "address": "123 Fake Street, Washington, DC 24153",
+      "creditCard": "1234-5678-9012-3456",
+      "favoriteFoods": [ "American", "Chinese", "Korean", "Spicy", "Comfort" ]
+    }
+}

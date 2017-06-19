@@ -2,43 +2,99 @@
 <html>
 <head>
     <title>My Profile</title>
-    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' href='css/main.css' />
 
    
-
 </head>
 
 
 <body>
 
+    <div class="signin_banner">
+        <form>
+            Username <input type="text" id="signinName" />
+            Password <input type="password" id="signinPass" />
+            <input type="button" value="login" id="signinSubmit" />
+
+        </form>
+    </div>
+
     <div class='sign-in'>
         <div class='arf'><a href="index.html"><img src='images/logo.png' alt="logo"></a></div>
-        <div class='arf'><a href='signin.html'>Sign-in</a>/<a href='register.html'>Register</a></div>
+        <div class='arf'><a href='#' id="signinLink">Sign-in</a>/<a id="registerField" href='register.html'>Register</a></div>
     </div>
+    
+    <div id = 'colorSelector' class="profile-flex">
+        <button id="greenBtn">Green</button>
+        <button id="redBtn">Red </button>
+        <button id="whiteBtn">White</button>
+    </div>
+    <div class='profile-flex toTheRight'>
+        <button id="theme"> Change Theme</button>
+    </div>
+
+    <div class='profile-flex'>
+
+            <div class='profile-flex'>
+                <div><h1><span id="lastName">lastName</span>, <span id="firstName">firstName </span> </h1><br />Your profile, your way.</div>
+            </div>
+
+
+            <div id="profileImageDiv">
+                <img id="profile-image" src="images/profile.jpg" alt="User Profile" /><br>
+                <input type='file' accept='image/*' onchange='setProfile()' id="newPic"><br>
+                <img id='output'>
+            </div>
+
+        </div>
+
+
+        <div class="profile-flex"> Email: <span id="email"></span> </div>  
+    <div class='profile-flex'>
+         <div><p> Address: </p> <span id="address"></span></div>
+    </div>
+    <div class="profile-flex">
+            <div><p>Favorite Foods:</p> </div>
+        
+        <form id="favoriteFoods">
+        </form>
+    </div>
+    <div class="profile-flex">
+        <br />Recent searches:
+    </div>
+
+
    
     <footer>
 
-        <div>
 
-            Site Map<br>
+            <div>
 
-            <a href="index.html"> Home </a><br>
-            <a href="register.html">Register</a><br>
-            <a href="request.html">Request</a><br>
-            <a href="about.html">About</a><br><br>
-            <p class="copyright">&copy Andrew J. Galle </p>
-        </div>
+                Site Map<br>
 
-        <div>
-            <a href="#">Privacy Policy </a><br>
-            <a href="#">Terms & Conditions</a>
-        </div>
+                <a href="index.html"> Home </a><br>
+                <a href="register.html">Register</a><br>
+                <a href="request.html">Request</a><br>
+                <a href="about.html">About</a><br><br>
+                <p class="copyright">&copy Andrew J. Galle </p>
+            </div>
 
-        <div>
-            <a href="#"> Lucky you :-D </a>
-        </div>
+            <div>
+                <a href="#">Privacy Policy </a><br>
+                <a href="#">Terms & Conditions</a>
+            </div>
 
-    </footer>
-    <script src='js/advert.js'> </script>
-</body>
+            <div>
+                <a href="#"> Lucky you :-D </a>
+            </div>
+
+</footer>
+    <script src="js/jQuery-3.2.1.min.js"></script >
+    <script src="js/profile.js"></script>
+    <script src='js/password.js'></script>
+    <script src='js/utility.js'></script>
+
+
+    </script> 
+   </body>
 </html>

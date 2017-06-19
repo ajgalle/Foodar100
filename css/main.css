@@ -1,6 +1,20 @@
-﻿
+﻿#colorSelector{
+    display:none;
+}
+#greenBtn{
+    background-color:green;
+}
+
+#redBtn {
+    background-color:red;
+}
+
+#whiteBtn {
+    background-color:white;
+}
 .signin_banner{
     background:lightgrey;
+    display:none;
     
 }  
 a{
@@ -13,6 +27,7 @@ a{
   } 
   body,html{
       height: 100%;
+
   }
 
   
@@ -41,11 +56,32 @@ a{
         justify-content: center;
         width: 100%;
     }
+
+.profile-flex {
+    display: flex;
+    margin: auto;
+    width:50%;
+    padding:5px;
+    background-color:aliceblue;
+    align-content:space-between;
+}
+.toTheRight{
+    justify-content:flex-end;
+    
+}
+
+#profile-image{
+    height:100px;
+    width:100px;
+    margin:10px;
+    border: 2px solid black;
+}
 	.flex-container{
         display: flex;
         flex-direction: row;     
         margin: auto;
 		width:100%;
+        
     }
 .food {
     display: flex;
@@ -154,9 +190,9 @@ a{
         background: white;
         opacity:0.6;
      }
-    .business1{
-    font-family: 'Lobster', cursive;
-    position:absolute;
+.business1{
+font-family: 'Lobster', cursive;
+position: absolute;
         left:50px;
         top:50px;
         background: white;
